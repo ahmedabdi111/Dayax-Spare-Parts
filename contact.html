@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Garyare Spare Parts</title>
+  <style>
+    /* Basic reset */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-size: 20px; /* increased base font size */
+      line-height: 1.7;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 25px 20px;
+      background-color: #004080;
+      color: white;
+    }
+
+    header .logo {
+      height: 50px;
+      margin-right: 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;  /* bigger header title */
+      font-weight: 800;
+      letter-spacing: 1.5px;
+    }
+
+    nav {
+      background-color: #0073e6;
+      text-align: center;
+      padding: 12px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 15px 25px;
+      font-size: 3.4rem;
+      border-bottom: 3px solid transparent;
+      transition: border-color 0.3s;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+      border-bottom: 3px solid #ffcc00;
+      color: #ffcc00;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 20px;
+      background-color: #f5f7fa;
+    }
+
+    section {
+      background: white;
+      padding: 40px 50px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+
+    section h2 {
+      margin-bottom: 25px;
+      color: #004080;
+      font-size: 2.8rem; /* bigger section heading */
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    section p {
+      font-size: 1.5rem; /* bigger paragraph */
+      margin-bottom: 40px;
+      color: #222;
+      font-weight: 600;
+    }
+
+    form {
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 1.3rem; /* bigger labels */
+      color: #222;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      font-size: 1.3rem; /* bigger input text */
+      padding: 14px;
+      margin-bottom: 30px;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    textarea:focus {
+      border-color: #0073e6;
+      box-shadow: 0 0 8px rgba(0,115,230,0.5);
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: #0073e6;
+      color: white;
+      padding: 18px 35px;
+      border: none;
+      border-radius: 7px;
+      font-size: 1.5rem; /* bigger button text */
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    button:hover {
+      background-color: #005bb5;
+      box-shadow: 0 4px 15px rgba(0,91,181,0.6);
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 1.3rem; /* bigger footer text */
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/logo 1.png" alt="Dayax Spare Parts Logo" class="logo" />
+    <h1>Contact Dayax Spare Parts</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Get in Touch</h2>
+      <p>Please fill out the form below and we will get back to you as soon as possible.</p>
+
+      <form action="mailto:info@dayaxspareparts.com" method="POST" enctype="text/plain">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Garyare Spare Parts. All rights reserved.</p>
+  </footer>
+</body>
+</html>
